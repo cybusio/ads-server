@@ -885,7 +885,7 @@ function _registerAdsPort(this: Server): Promise<AmsTcpPacket> {
     if (this.settings.localAmsNetId && this.settings.localAdsPort) {
       debug(`_registerAdsPort(): Local AmsNetId and ADS port manually given so using ${this.settings.localAmsNetId}:${this.settings.localAdsPort}`)
     
-      const res = {} as AmsTcpPacket
+      const res = { amsTcp: {} } as AmsTcpPacket
 
       res.amsTcp.data = {
         localAmsNetId: this.settings.localAmsNetId,
