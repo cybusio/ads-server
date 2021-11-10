@@ -16,4 +16,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 # Ignore built ts files
-dist/**/*
+# Commented this out because, npm install from a github repository is not working properly
+# npm seems to don't build the package on install.
+#dist/**/*
